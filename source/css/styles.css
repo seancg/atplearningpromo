@@ -293,6 +293,7 @@ a.button_buy_big {
 }
 
 a.button_buy:hover,
+a.button_feature:hover,
 a.button_buy_pricing:hover,
 a.button_buy_big:hover {
     background: #c54200;
@@ -417,9 +418,47 @@ a.button_buy_pricing {
     -moz-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .5);
     -webkit-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .5);
 }
+a.button_feature {
+    background: #fea817;
+    /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2ZlYTgxNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjNTQyMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #fea817 1%, #c54200 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #fea817), color-stop(100%, #c54200));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fea817 1%, #c54200 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fea817 1%, #c54200 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fea817 1%, #c54200 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #fea817 1%, #c54200 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fea817', endColorstr='#c54200', GradientType=0);
+    /* IE6-8 */
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    font-size: 135%;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #af5305;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, .5);
+    -moz-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .5);
+    -webkit-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .5);
+}
 
 a.button_buy:active,
 a.button_try:active,
+a.button_feature:active,
 a.button_buy_pricing:active,
 a.button_buy_big:active {
     box-shadow: inset 0 -2px 0 rgba(255, 255, 255, .4);
@@ -890,9 +929,10 @@ img {
     margin: 15px 0 15px 0;
 }
 
-#features img {
+#features a {
     float: left;
     margin: 0 10px 0 0;
+    padding: 10px;
 }
 
 
