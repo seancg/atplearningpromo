@@ -909,7 +909,7 @@ img {
 }
 
 #banner_image img#image_bottom {
-    margin-top: -10px;
+    margin-top: 20px;
 }
 
 #banner ul {
@@ -2145,6 +2145,7 @@ a#contact_close_counter {
     #phone {
         float: none;
         text-align: left;
+        clear: both;
     }
     /* Banner */
     #banner {
