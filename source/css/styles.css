@@ -456,9 +456,12 @@ a.button_feature {
     -moz-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .5);
     -webkit-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .5);
 }
+
 a.button_feature > span {
     width: 100%;
     background: none;
+    margin: 0 auto;
+    padding: 5px 0 0 0;
     border: none;
     font-family: 'Roboto', serif;
     font-weight: normal;
@@ -466,8 +469,7 @@ a.button_feature > span {
     font-size: 0.6em;
     color: #FFF;
     text-align: center;
-    margin: 0 auto;
-    padding: 5px 0 0 0;
+    text-shadow: 0 -1px 0 #af5305;
     box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
@@ -959,6 +961,7 @@ img {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
 }
+
 
 /* 6.2 Description */
 
@@ -1967,6 +1970,10 @@ a#contact_close_counter {
     #banner .buttons_big {
         margin: 25px 0 -40px 0 !important;
     }
+    #banner .buttons {
+        margin: 15px auto 0 auto !important;
+        left: calc( 50% - 354px / 2);
+    }
     .button_buy_pricing {
         width: 141px !important;
     }
@@ -2153,7 +2160,8 @@ a#contact_close_counter {
     }
     /* Buttons */
     #banner .buttons {
-        margin: 25px 0 -60px 20px !important;
+        margin: 25px auto -5px auto !important;
+        left: calc( 50% - 354px / 2);
     }
     /*Features*/
     #features {
@@ -2318,7 +2326,9 @@ a#contact_close_counter {
         margin: 20px 0 0 20px !important;
     }
     #banner .buttons {
-        margin: 20px 0 0 20px !important;
+        position: relative;
+        margin: -40px auto 0 auto !important;
+        left: calc( 50% - 240px / 2);
     }
     a.button_buy {
         float: none;
@@ -2341,6 +2351,9 @@ a#contact_close_counter {
     }
     .buttons span {
         display: none;
+    }
+    #features .buttons span {
+        display: block;
     }
     /* Pricing */
     #pricing_table {
