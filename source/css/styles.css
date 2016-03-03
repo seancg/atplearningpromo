@@ -418,6 +418,7 @@ a.button_buy_pricing {
     -moz-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .5);
     -webkit-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .5);
 }
+
 a.button_feature {
     background: #fea817;
     /* Old browsers */
@@ -437,12 +438,12 @@ a.button_feature {
     /* W3C */
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fea817', endColorstr='#c54200', GradientType=0);
     /* IE6-8 */
-    width: 80px;
-    height: 80px;
+    width: 65px;
+    height: 65px;
     margin: 0 auto;
-    padding: 0;
+    padding: 5px 0 0 0;
     display: block;
-    font-size: 135%;
+    font-size: 190%;
     font-weight: bold;
     text-align: center;
     color: #fff;
@@ -454,6 +455,22 @@ a.button_feature {
     box-shadow: inset 0 2px 0 rgba(255, 255, 255, .5);
     -moz-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .5);
     -webkit-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .5);
+}
+a.button_feature > span {
+    width: 100%;
+    background: none;
+    border: none;
+    font-family: 'Roboto', serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.6em;
+    color: #FFF;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 0 0 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
 }
 
 a.button_buy:active,
@@ -932,9 +949,16 @@ img {
 #features a {
     float: left;
     margin: 0 10px 0 0;
-    padding: 10px;
+    padding: 15px 10px 10px 10px;
 }
 
+#features .buttons {
+    width: 77px;
+    margin-right: 10px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
 
 /* 6.2 Description */
 

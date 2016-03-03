@@ -15,7 +15,7 @@ var gulp = require('gulp'),
     runSequence = require('run-sequence'),
     paths = {
         styles: {
-            src: 'source/scss/**/*.scss',
+            src: 'source/css/**/*.css',
             dest: 'www/css'
         },
         scripts: {
