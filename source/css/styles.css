@@ -614,21 +614,29 @@ h4 {
 }
 
 .pricing_header h4 {
-    font-size: 210%;
+    font-size: 200%;
     padding: 15px 0 0 0;
 }
 
 .pricing_header h5 {
     font-size: 105%;
-    color: #ccc;
-    margin: -10px 0 10px 0;
-    padding: 0;
+    color: #FFF;
+    margin: 0 0 10px 0;
+    padding: 5px 0 0 0;
 }
 
 #favorite h5 {
     color: #f7c9c9;
+    margin: 0;
 }
 
+#favorite h4 {
+    margin-top: -19px;
+}
+
+#favorite p {
+/*    margin-top: -15px;
+*/}
 
 /*------------------------------------------------------------------------------------------*/
 
@@ -2024,6 +2032,12 @@ a#contact_close_counter {
         width: 338px;
     }
     /*Pricing*/
+    .price {
+        font-size: 300%;
+    }
+    .pricing_header h4 {
+        font-size: 150%;
+    }
     .pricing_footer p {
         background-color: rgba(30, 30, 30, 0.25);
         border-radius: 30px;
@@ -2227,6 +2241,12 @@ a#contact_close_counter {
     .pricing_block {
         margin-bottom: 10px;
     }
+    .price {
+        font-size: 300%;
+    }
+    .pricing_header h4 {
+        font-size: 150%;
+    }
     /*Quotes*/
     blockquote {
         margin-bottom: 25px;
@@ -2264,13 +2284,17 @@ a#contact_close_counter {
         overflow: hidden;
     }
     .row {
-        width: 285px;
+        width: 90%;
+        min-width: 285px;
         margin: 0 auto;
     }
     .six.mobile-two.columns {
         width: 99% !important;
         padding-left: 0 !important;
         clear: both;
+    }
+    .row .mobile-two {
+        width: 100% !important;
     }
     .row .mobile-two:last-child {
         float: left;
@@ -2359,11 +2383,13 @@ a#contact_close_counter {
     /* Pricing */
     #pricing_table {
         margin: 0 auto;
-        width: 230px;
+        width: 100%;
+        min-width: 230px;
     }
     .pricing_block {
         margin-bottom: 10px;
-        width: 200px;
+        width: 100%;
+        min-width: 200px;
     }
     #pricing_table .three.mobile-two.columns {
         width: 220px;
