@@ -192,7 +192,7 @@ li.last,
     -moz-border-radius: 100em;
     height: 32px;
     width: 32px;
-    font-family: 'Roboto', serif;
+    font-family: 'Roboto', Arial, Verdana, Helvetica, sans-serif;
     font-weight: 700;
     font-style: italic;
     color: #833100;
@@ -635,8 +635,10 @@ h4 {
 }
 
 #favorite p {
-/*    margin-top: -15px;
-*/}
+    /*    margin-top: -15px;
+*/
+}
+
 
 /*------------------------------------------------------------------------------------------*/
 
@@ -874,8 +876,8 @@ img {
 
 #phone {
     float: right;
-    font-size: 108%;
-    margin: 33px 0 0 0;
+    font-size: 170%;
+    margin: 25px 0 0 0;
     color: #999;
     text-align: right;
 }
@@ -905,6 +907,7 @@ img {
     margin: 20px 0 80px 0;
     padding: 35px 0 0 0;
     position: relative;
+    font-size: 1.1em;
 }
 
 #banner .inner {
@@ -917,16 +920,16 @@ img {
 }
 
 #banner_image img#image_bottom {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #banner ul {
-    margin: 20px 0 20px 0;
+    margin: 20px 0 30px 0;
 }
 
 #banner li {
-    background: url(../images/sprite.png) no-repeat -1px -79px;
-    font-size: 0.9em;
+    background: url(../images/sprite.png) no-repeat -1px -69px;
+    font-size: 1em;
     font-weight: bold;
     padding: 7px 0 7px 35px;
 }
@@ -1153,7 +1156,7 @@ input#submit {
     margin: 0;
     float: right;
     color: #fff;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Verdana, Helvetica, sans-serif;
     font-size: 120%;
     font-weight: bold;
     color: #fff;
