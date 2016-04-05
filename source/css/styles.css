@@ -461,12 +461,12 @@ a.button_feature > span {
     width: 100%;
     background: none;
     margin: 0 auto;
-    padding: 5px 0 0 0;
+    padding: 3px 0 0 0;
     border: none;
     font-family: 'Roboto', serif;
     font-weight: normal;
     font-style: normal;
-    font-size: 0.6em;
+    font-size: 0.5em;
     color: #FFF;
     text-align: center;
     text-shadow: 0 -1px 0 #af5305;
@@ -622,7 +622,7 @@ h4 {
     font-size: 105%;
     color: #FFF;
     margin: 0 0 10px 0;
-    padding: 5px 0 0 0;
+    padding: 0;
 }
 
 #favorite h5 {
@@ -630,15 +630,14 @@ h4 {
     margin: 0;
 }
 
-#favorite h4 {
+/*#favorite h4 {
     margin-top: -19px;
 }
 
 #favorite p {
-    /*    margin-top: -15px;
-*/
+    margin-top: 15px;
 }
-
+*/
 
 /*------------------------------------------------------------------------------------------*/
 
@@ -924,11 +923,11 @@ img {
 }
 
 #banner ul {
-    margin: 20px 0 30px 0;
+    margin: 20px 0 50px 0;
 }
 
 #banner li {
-    background: url(../images/sprite.png) no-repeat -1px -69px;
+    background: url(../images/sprite.png) no-repeat -1px -77px;
     font-size: 1em;
     font-weight: bold;
     padding: 7px 0 7px 35px;
@@ -1115,7 +1114,7 @@ blockquote footer div {
     -webkit-box-shadow: inset 0 2px 3px #999;
 }
 
-#newsletter input#e-mail {
+#newsletter input#subscribe_email {
     background: none;
     height: 42px;
     width: 240px;
@@ -1128,7 +1127,7 @@ blockquote footer div {
     color: #999;
 }
 
-#newsletter input#e-mail:focus {
+#newsletter input#subscribe_email:focus {
     color: #000;
 }
 
@@ -1311,6 +1310,7 @@ input#submit:hover {
     font-weight: 700;
     margin: 0;
     padding: 0;
+    line-height: 1.1em;
 }
 
 .price span {
@@ -1474,6 +1474,15 @@ input#submit:hover {
     display: none;
 }
 
+#contactmessages {
+    margin-bottom: 20px;
+}
+
+#contactmessages h3 {
+    margin: -30px 0 15px 0;
+    text-align: right;
+}
+
 label {
     display: block;
     margin: 10px 0 5px 0;
@@ -1481,6 +1490,7 @@ label {
 
 input#contactname,
 input#contactemail,
+input#contactphone,
 #contact textarea,
 input#humanornot {
     border: 1px solid #d5d5d5;
@@ -1494,15 +1504,43 @@ input#humanornot {
 }
 
 input#contactname,
+input#contactphone,
 input#contactemail {
-    width: 200px;
+    width: 100%;
 }
 
 #contact textarea {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    width: 350px;
+    width: 100%;
     height: 100px;
+    margin-bottom: 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 100%;
+}
+
+
+/* Google reCAPTCHA */
+
+.g-recaptcha {
+    width: 100% !important;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.rc-anchor.rc-anchor-normal.rc-anchor-light,
+.g-recaptcha > div > div,
+.rc-anchor-normal {
+    width: 100% !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.g-recaptcha > div > div .rc-anchor-content {
+    width: 70% !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.g-recaptcha > div > div .rc-anchor-normal-footer {
+    width: 70% !important;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 input#submitcontact {
@@ -1527,10 +1565,11 @@ input#submitcontact {
     height: 34px;
     width: 120px;
     display: block;
-    margin: 10px 0 0 0;
+    float: right;
+    margin: -2px 0 0 0;
     padding: 0 0 5px 0;
     color: #fff;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Verdana, Helvetica, sans-serif;
     font-size: 120%;
     font-weight: bold;
     color: #fff;
@@ -2031,7 +2070,7 @@ a#contact_close_counter {
         width: 460px;
         margin-right: 115px;
     }
-    #newsletter input#e-mail {
+    #newsletter input#subscribe_email {
         width: 338px;
     }
     /*Pricing*/
@@ -2222,7 +2261,7 @@ a#contact_close_counter {
         -moz-box-shadow: inset 0 2px 3px #999;
         -webkit-box-shadow: inset 0 2px 3px #999;
     }
-    #newsletter input#e-mail {
+    #newsletter input#subscribe_email {
         background: none;
         height: 42px;
         width: 273px;
@@ -2423,7 +2462,7 @@ a#contact_close_counter {
         box-shadow: none;
         border: none;
     }
-    #newsletter input#e-mail {
+    #newsletter input#subscribe_email {
         background: #fff;
         height: 42px;
         width: 235px;
@@ -2439,7 +2478,7 @@ a#contact_close_counter {
         line-height: 42px;
         color: #999;
     }
-    #newsletter input#e-mail:focus {
+    #newsletter input#subscribe_email:focus {
         color: #000;
     }
     input#submit {
