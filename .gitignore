@@ -1,6 +1,5 @@
 node_modules
 dist/
 .tmp
-source/documentation
-source/psd
+source/
 
