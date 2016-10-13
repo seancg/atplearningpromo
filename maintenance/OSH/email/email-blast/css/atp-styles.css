@@ -1,0 +1,215 @@
+/*  Custom Email Styles  */
+
+h4 {
+    font-weight: bold;
+}
+
+table.body, table.container {
+    background: #FFF;
+}
+
+.logo {
+    padding-top: 10px;
+}
+.header-phone, .header-phone a {
+    margin-top: 8px;
+    color: #dd4632;
+    font-weight: bold;
+    display: block;
+}
+.hero {
+    background: #3f3e3d;
+}
+.hero2 {
+    background: #FFFFFF;
+}
+
+.hero .columns, .hero2 .columns {
+    padding-bottom: 0;
+}
+
+.hero h1, .hero2 h1 {
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero p, .hero2 p {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.hero li, .hero2 li {
+    color: #fff;
+}
+
+.hero .wrapper-inner, .hero2 .wrapper-inner {
+    padding: 20px;
+    /*controls the height of the hero*/
+}
+
+.hero .container, .hero2 .container {
+    background: none;
+}
+
+.hero2 h1, .hero2 p, .hero2 li {
+    color: #000000;
+}
+.wrapper.secondary {
+    background: #f3f3f3;
+}
+
+
+/****************************/
+
+
+/*  Social Network Buttons  */
+
+
+/****************************/
+
+table.facebook td {
+    background: #3b5998 !important;
+}
+
+table.social-buttons {
+    width: 100%;
+}
+table.social-buttons td:last-child {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+table.facebook,
+table.twitter {
+    width: 40px;
+}
+
+table.facebook td {
+    background: #3b5998;
+    border-color: #2d4473;
+    margin-top: 7px;
+    margin-left: 0;
+    margin-right: 5px;
+    padding-top: 0px;
+    padding-right: 0;
+    padding-bottom: 0px;
+    padding-left: 0;
+    text-align: center;
+}
+
+table.facebook:hover td {
+    background: #2d4473 !important;
+}
+
+table.twitter td {
+    background: #00acee;
+    border-color: #0087bb;
+    margin-top: 7px;
+    margin-left: 5px;
+    margin-right: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+table.twitter:hover td {
+    background: #0087bb !important;
+}
+
+
+/****************************/
+
+
+/* Footer*/
+
+
+/****************************/
+
+.footer h5 {
+    padding-bottom: 10px;
+}
+
+.atp-footer {
+    padding-top: 4px !important;
+    text-align: center;
+    font-size: 11px;
+    color: #999;
+    line-height: 1.3em;
+}
+
+.atp-footer a {
+    color: #999 !important;
+}
+.atp-footer-logo {
+    width: 60px;
+}
+
+.atp-disclaimer {
+    font-size: 11px;
+}
+
+.atp-disclaimer a {
+    color: #000000 !important;
+    text-decoration: underline;
+}
+
+table.atp-disclaimer td,
+.atp-disclaimer td p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.atp-unsubscribe {
+    font-size: 11px;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.atp-nobpad {
+    padding-bottom: 0 !important;
+}
+
+.atp-nowrap {
+    white-space: nowrap;
+}
+
+.white {
+    color: #FFFFFF;
+}
+.head-color {
+    color: #ffAE00;
+}
+.head-color2 {
+    color: #B28500;
+}
+.hr2 {
+    color: #000000;
+    border-width: 2px;
+    border-style: solid;
+}
+
+th.callout-inner.primary {
+    background: #3f3e3d;
+    border: 1px solid #000000;
+    color: #FFFFFF;
+}
+
+th.callout-inner.primary p, th.callout-inner.primary li {
+    color: #FFFFFF;
+    font-size: 0.9em;
+}
+th.callout-inner.primary li {
+    font-size: 0.8em;
+    padding-bottom: 0.25em;
+}
+th.callout-inner.primary ul {
+    padding-left: 1.5em;
+}
+.book {
+    padding-right: 1em;
+}
+
+th.connect {
+    padding: 0;
+    font-size: .7em;
+}

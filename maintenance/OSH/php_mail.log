@@ -1,0 +1,2 @@
+mail() on [/home/atplearn/public_html/maintenance/OSH/process_subscribe.php:22]: To: service@atplearning.com -- Headers: MIME-Version: 1.0  Content-type: text/html; charset=UTF-8  From: no-reply@atplearning.com  Reply-To: no-reply@atplearning.com
+mail() on [/home/atplearn/public_html/maintenance/OSH/process_subscribe.php:22]: To: service@atplearning.com -- Headers: MIME-Version: 1.0  Content-type: text/html; charset=UTF-8  From: no-reply@atplearning.com  Reply-To: no-reply@atplearning.com
