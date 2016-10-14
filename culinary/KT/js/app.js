@@ -60,7 +60,7 @@ function closerequest() {
         });
         // contact form handler
         var form = $("form#contactform");
-        form.submit(function (e) {
+        /*form.submit(function (e) {
             $.post('contact.php', $("form#contactform").serialize(), function (data) {
                 if (data.status == 200) {
                     $('#formwrapper').hide();
@@ -82,16 +82,50 @@ function closerequest() {
             }, 'json');
 
             return false;
-        });
+        });*/
         // make contact form available on click
         $('.feedback,#feedback').click(function (e) {
             $('#contact').reveal();
             return false;
         });
 
+
+         form.submit(function (e) {
+              e.preventDefault();
+              if($('#contactname').val()==''){
+                alert('Please provide your name');
+              }else if($('#contactemail').val()==''){
+                alert('Please provide your email');
+              }else if($('#contactmessage').val()==''){
+                alert('Please fill out your message');
+              }else{
+                  var formData = $("form#contactform").serialize();
+                  $.ajax({
+                         url : 'contact.php',
+                         type : 'POST',
+                         data : { data : formData },
+                         success : function(data) {
+                            console.log(data);
+                            $('#formwrapper').hide();
+                            $('#contactmessages').empty().append('<p class="success">Your Message has been sent.</p><a href="javascript:closecontact();" id="contact_close_counter">Close (<span id="counter">5</span>)</a>');
+                            var sec = $('span#counter').text() || 0;
+                            var timer = setInterval(function () {
+                                $('span#counter').text(--sec);
+                                if (sec == 0) {
+                                    closecontact();
+                                    clearInterval(timer);
+                                }
+                            }, 1000);
+                         }
+                    });
+              }
+              
+          });
+
         // request form handler
-        var form = $("form#requestform");
-        form.submit(function (e) {
+        var form1 = $("form#requestform");
+       /* form.submit(function (e) {
+            console.log("Hi");
             $.post('request.php', $("form#requestform").serialize(), function (data) {
                 if (data.status == 200) {
                     $('#requestwrapper').hide();
@@ -113,12 +147,45 @@ function closerequest() {
             }, 'json');
 
             return false;
-        });
+        });*/
         // make contact form available on click
         $('.request,#request').click(function (e) {
             $('#requestForm').reveal();
             return false;
         });
+
+
+         form1.submit(function (e) {
+              e.preventDefault();
+              if($('#requestname').val()==''){
+                alert('Please provide your name');
+              }else if($('#requestemail').val()==''){
+                alert('Please provide your email');
+              }else if($('#requestmessage').val()==''){
+                alert('Please fill out your message');
+              }else{
+                  var formData = $("form#requestform").serialize();
+                  $.ajax({
+                         url : 'request.php',
+                         type : 'POST',
+                         data : { data : formData },
+                         success : function(data) {
+                            console.log(data);
+                            $('#requestwrapper').hide();
+                            $('#requestmessages').empty().append('<p class="success">Your Message has been sent.</p><a href="javascript:closerequest();" id="request_close_counter">Close (<span id="counter">5</span>)</a>');
+                            var sec = $('span#counter').text() || 0;
+                            var timer = setInterval(function () {
+                                $('span#counter').text(--sec);
+                                if (sec == 0) {
+                                    closerequest();
+                                    clearInterval(timer);
+                                }
+                            }, 1000);
+                         }
+                    });
+              }
+              
+          });
 
 
     });

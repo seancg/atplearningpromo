@@ -8,7 +8,7 @@
    "header_gradient-end" => "#ab2210",
    "newsletter_base_color" => "#dd4733",
    "form_email" => "sean.grant@atplearning.com",
-   "request_form_email" => "sean.grant@atplearning.com",
+   "request_form_email" => "rajeev.gade@atplearning.com",
    "featured_pricing_badge" => "badge_bestvalue.png",
    "featured_pricing_badge_selected" => "1",
    "pricing_background" => "#f0f0f0",
