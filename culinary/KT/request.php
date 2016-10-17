@@ -53,7 +53,7 @@ if(!empty($name) && !empty($email) && !empty($message))
             
     mail($recipient, $subject, $message, implode("\r\n", $headers));
 
-    echo "Message Sent Sucessfully";
+    echo "Message Sent Sucessfully.";
 }
 
 ?>

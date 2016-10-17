@@ -48,8 +48,10 @@ if(!empty($name) && !empty($email) && !empty($message))
     $headers[] = "X-Mailer: ShapingRain FormMailer on PHP/" . phpversion();
     $recipient = $settings['request_form_email'];
             
-    $subject   = "Message sent through your contact form.";
-    $message   = strip_tags(stripslashes($_POST['message']));
+    $subject   = "Message sent through your KT contact form.";
+    $message   = "<p>Someone has requested to be contacted via the <b>ATP Learning Promo - KT (http://www.atplearningpromo.com/culinary/KT/)</b> landing page:</p>";
+
+    $message   .= strip_tags(stripslashes($_POST['message']));
             
     mail($recipient, $subject, $message, implode("\r\n", $headers));
 

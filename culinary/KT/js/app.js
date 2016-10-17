@@ -107,7 +107,7 @@ function closerequest() {
                          success : function(data) {
                             console.log(data);
                             $('#formwrapper').hide();
-                            $('#contactmessages').empty().append('<p class="success">Your Message has been sent.</p><a href="javascript:closecontact();" id="contact_close_counter">Close (<span id="counter">5</span>)</a>');
+                            $('#contactmessages').empty().append('<p class="success">Your Message has been sent.</p><a href="javascript:closecontact();" id="contact_close_counter">Close (<span id="counter">10</span>)</a>');
                             var sec = $('span#counter').text() || 0;
                             var timer = setInterval(function () {
                                 $('span#counter').text(--sec);
@@ -170,9 +170,9 @@ function closerequest() {
                          type : 'POST',
                          data : { data : formData },
                          success : function(data) {
-                            console.log(data);
+                            // console.log(data);
                             $('#requestwrapper').hide();
-                            $('#requestmessages').empty().append('<p class="success">Your Message has been sent.</p><a href="javascript:closerequest();" id="request_close_counter">Close (<span id="counter">5</span>)</a>');
+                            $('#requestmessages').empty().append('<p class="success">Your Message has been sent.</p>Dear Chef Instructor,<p>Thank you for your interest in American Technical Publishers\' new educational products for mastering knife techniques. Shortly, you will be receiving a link to the e-version of the companion textbook, <em>50 Effective Knife Techniques</em>, which follows the DVD presentation, for immediate review.</p><p>As always, please don’t hesitate to contact us if you have further questions or instructional needs.</p><p>Cordially,</p><p>Gayle</p><a href="javascript:closerequest();" id="request_close_counter">Close (<span id="counter">20</span>)</a>');
                             var sec = $('span#counter').text() || 0;
                             var timer = setInterval(function () {
                                 $('span#counter').text(--sec);
