@@ -39,11 +39,11 @@
         a.async = 1;
         a.src = g;
         m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-56749754-1', 'auto');
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-24414646-6', 'auto');
     ga('send', 'pageview');
     </script>
-    <!-- Universal Google Analytics Plugin by PB Web Development -->
     <!-- END GOOGLE ANALYTICS -->
 </head>
 
@@ -73,20 +73,14 @@
             <!--Start of Product Banner Description-->
             <div class="seven columns offset-by-one">
                 <h1>Take Knife Skills to Pro Level</h1>
-                <p>More than 3-hours of video featuring over 80 demonstrations, <strong>Knife Techniques Videos (DVD)</strong> features award-winning chefs demonstrating the proper methods of cutting foods. Learn basic cuts, such as the dice and julienne, to advanced techniques, like deboning a whole chicken. Learn which cuts to use for specific foods. Become a stand-out in the kitchen! Develop proficient knife techniques <strong>to minimize waste, promote even cooking, and enhance plated dishes</strong>.</p>
-                <!--                 <ul>
-                    <li>minimize waste</li>
-                    <li>promote even cooking</li>
-                    <li>enhance plated dishes</li>
-                </ul>
- -->
+                <p>With 3+ hours of video featuring over 80 demonstrations, <strong>Knife Techniques Videos (DVD)</strong> features award-winning chefs demonstrating the proper methods of cutting foods. Learn basic cuts, such as the dice and julienne, to advanced techniques, like deboning a whole chicken. Learn which cuts to use for specific foods. Become a stand-out in the kitchen! Develop proficient knife techniques <strong>to minimize waste, promote even cooking, and enhance plated dishes</strong>.</p>
                 <p>
                     Culinary students, instructors, and home-cooking enthusiasts will benefit from owning the <em>Knife Techniques Videos</em> (DVD) and companion textbook to perfect their skill level and practice, practice, practice!</p>
             </div>
             <!--End of Product Banner Description-->
             <!--Start of Buy and Demo Button-->
             <div class="buttons">
-                <a href="#" target="_blank" class="button_buy gradient modal-btn">Look inside</a><span class="gradient">or</span><a href="http://www.atplearning.com/50-Effective-Knife-Techniques-C238.aspx" target="_blank" rel="LI" class="button_try gradient">Buy Now</a>
+                <a href="http://issuu.com/amertech/docs/kt26_combineddemo?e=1721656/39814027" target="_blank" class="button_buy gradient modal-btn">Look inside</a><span class="gradient">or</span><a href="http://www.atplearning.com/50-Effective-Knife-Techniques-C238.aspx" target="_blank" rel="LI" class="button_try gradient">Buy Now</a>
             </div>
             <!--End of Buy and Demo Button-->
         </div>
@@ -109,21 +103,21 @@
                 <ul>
                     <li class="six columns">
                         <div class="buttons">
-                            <a href="#" target="_blank" class="button_feature gradient">DVD<br/><span>Sample</span></a>
+                            <a href="#" class="button_feature gradient button_video" data-src="//player.vimeo.com/video/177127893">DVD<br/><span>Sample</span></a>
                         </div>
                         <h4>Knife Techniques Videos (DVD) Sampler</h4>
                         <p>Highlights from this comprehensive instructional tool cover basic to advanced knife techniques. Knife cuts are detailed through step-by-step videos to reinforce learning.</p>
                     </li>
                     <li class="six columns">
                         <div class="buttons">
-                            <a href="#" target="_blank" class="button_feature gradient">DVD<br/><span>Sample</span></a>
+                            <a href="#" class="button_feature gradient button_video" data-src="//player.vimeo.com/video/177260567">DVD<br/><span>Sample</span></a>
                         </div>
                         <h4>Cutting Supremes: Sample Technique Video</h4>
                         <p>See how each of the 50 knife techniques are demonstrated, with close-ups of proper hand and product placement.</p>
                     </li>
                     <li class="six columns">
                         <div class="buttons">
-                            <a href="#" target="_blank" class="button_feature gradient">DVD<br/><span>Sample</span></a>
+                            <a href="#" class="button_feature gradient button_video" data-src="//player.vimeo.com/video/178209879">DVD<br/><span>Sample</span></a>
                         </div>
                         <h4>Table of Contents Video</h4>
                         <p>A visual walk-through of the DVD’s table of contents, organized into seven sections and easy-to-search techniques. </p>
@@ -166,15 +160,13 @@
         <div class="row">
             <section id="pricing">
                 <h2 class="kt-lc"><span>Select the product that fits your needs</span></h2>
-                <h3><strong><em>~ FREE Online Instructor Resource</em></strong> when purchasing a classroom set of 20 (DVDs, textbooks or bundles).</em> ~</h3>
+                <h3><strong><em>~ FREE Online Instructor Resources</em></strong> when purchasing a classroom set of 20 (DVDs, textbooks or bundles).</em> ~</h3>
                 <div id="pricing_table">
                     <!--Begin Pricing Block-->
                     <div class="four mobile-one columns">
                         <div class="pricing_block">
                             <div class="pricing_header">
                                 <h4>Knife Techniques Videos (DVD)</h4>
-                                <!--                                 <h5>List Price: $85</h5>
- -->
                                 <p class="price">$85</p>
                             </div>
                             <ul>
@@ -199,7 +191,7 @@
                             </div>
                             <ul>
                                 <li>Watch, Listen, Read</li>
-                                <li>Speed information retention and knife skills proficiency with practice! </li>
+                                <li>Speed up information retention and knife skills proficiency with practice! </li>
                                 <li class="last">Save $10 off the 248-page companion textbook when you purchase the bundle</li>
                             </ul>
                             <div class="pricing_footer">
@@ -216,7 +208,7 @@
                                 <p class="price">$340</p>
                             </div>
                             <ul>
-                                <li>Section and technique instructional plans </li>
+                                <li>Topical section and technique instructional plans</li>
                                 <li>Over 950 PowerPoint<sup>&reg;</sup> Presentation slides</li>
                                 <li>More than 300 test questions, organized by section</li>
                                 <li class="last">100 Technique Evaluations (score sheets)</li>
@@ -316,19 +308,21 @@
         </div>
         <div id="formwrapper">
             <form method="post" action="contact.php" id="contactform">
-                <label>Full name</label>
+                <input type="hidden" value="<?php echo $_SERVER['QUERY_STRING'] ?>" name="qs" />
+                <label>Full name<span class="required">*</span></label>
                 <input id="contactname" name="name" required>
-                <label>Email address</label>
+                <label>Email address<span class="required">*</span></label>
                 <input id="contactemail" name="email" type="email" required>
                 <label>Phone</label>
                 <input id="contactphone" name="phone" type="phone">
                 <label>I prefer to be contacted by: </label>
                 <input type="radio" name="contactprefer" value="Email" /> Email
                 <input type="radio" name="contactprefer" value="Phone" /> Phone
-                <label>Message</label>
+                <label>Message<span class="required">*</span></label>
                 <textarea name="message" id="contactmessage" required>I am interested in learning more about the Knife Techniques textbook and related products. Please contact me.</textarea>
                 <div class="g-recaptcha" data-sitekey="6LdjUBoTAAAAAMUTEvWQT3TZItjq2tIoOobM0n_P"></div>
                 <input id="submitcontact" name="submit" type="submit" value="Submit" class="gradient">
+                <p class="required">* required fields</p>
             </form>
         </div>
     </div>
@@ -343,9 +337,10 @@
         </div>
         <div id="requestwrapper">
             <form method="post" action="request.php" id="requestform">
-                <label>Full name</label>
+                <input type="hidden" value="<?php echo $_SERVER['QUERY_STRING'] ?>" name="qs" />
+                <label>Full name<span class="required">*</span></label>
                 <input id="requestname" name="name" required>
-                <label>Email address</label>
+                <label>Email address<span class="required">*</span></label>
                 <input id="requestemail" name="email" type="email" required>
                 <label>School/Organization</label>
                 <input id="requestschool" name="school">
@@ -353,35 +348,28 @@
                 <input id="requestschooladdress" name="schooladdress">
                 <label>Phone</label>
                 <input id="requestphone" name="phone" type="phone">
-                <label>Message</label>
+                <label>Message<span class="required">*</span></label>
                 <textarea name="message" id="requestmessage" required>I am interested in reviewing the Knife Techniques ebook.</textarea>
                 <!--                 <div class="g-recaptcha" data-sitekey="6LdjUBoTAAAAAMUTEvWQT3TZItjq2tIoOobM0n_P"></div>
  -->
                 <input id="submitrequest" name="submit" type="submit" value="Submit" class="gradient">
+                <p class="required">* required fields</p>
             </form>
         </div>
     </div>
     <!--End of Request form-->
     <!-- Start of Video Modal -->
-    <div id="videomodal" class="reveal-modal medium" tabindex="-1" role="dialog">
-        <a href="javascript:closemodal();" id="contact_close"><span>Close</span></a>
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">×</button>
-            <h3>Dialog</h3>
-        </div>
-        <div class="modal-body">
-            <iframe src="" style="zoom:0.60" width="99.6%" height="250" frameborder="0"></iframe>
-        </div>
-        <div class="modal-footer">
-            <button class="btn" data-dismiss="modal">OK</button>
+    <div id="videomodal" class="reveal-modal expand" tabindex="-1" role="dialog">
+        <a href="javascript:closevideo();" id="video_close"><span>Close</span></a>
+        <div class="embed_container flex-video">
+            <iframe id="video" src="" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
     </div>
     <!-- End of Video Modal -->
     <a href="#" class="scrollup">Scroll up</a>
-    <!-- Included JS Files (Compressed) -->
+    <!-- Included JS Files -->
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
-    <!--     <script src="js/promo.js"></script> -->
 </body>
 
 </html>

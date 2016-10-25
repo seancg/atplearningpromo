@@ -35,9 +35,12 @@ parse_str($_POST["data"], $_POST);
 
 $name = $_POST['name'];
 $email = $_POST['email'];
+$school = $_POST['school'];
+$schooladdress = $_POST['schooladdress'];
+$phone = $_POST['phone'];
 $message = $_POST['message'];
 
-if(!empty($name) && !empty($email) && !empty($message))
+if(!empty($name) && !empty($email) && !empty($school) && !empty($schooladdress) && !empty($phone) && !empty($message))
 {
     //echo "Hi";
     //echo json_encode($data);
@@ -49,7 +52,21 @@ if(!empty($name) && !empty($email) && !empty($message))
     $recipient = $settings['request_form_email'];
             
     $subject   = "Sample ebook request for 50 Effective Knife Techniques.";
-    $message   = strip_tags(stripslashes($_POST['message']));
+    $message   = "Someone has requested the 50 Effective Knife Techniques ebook for review via the ATP Learning Promo - KT (http://www.atplearningpromo.com/culinary/KT/) landing page:</p>";
+    $message   .= "\n\nURL_variables: ";
+    $message   .= strip_tags(stripslashes($_POST['qs']));
+    $message   .= "\n\nName: ";
+    $message   .= strip_tags(stripslashes($_POST['name']));
+    $message   .= "\n\nEmail Address: ";
+    $message   .= strip_tags(stripslashes($_POST['email']));
+    $message   .= "\n\nSchool/Organization: ";
+    $message   .= strip_tags(stripslashes($_POST['school']));
+    $message   .= "\n\nSchool Address: ";
+    $message   .= strip_tags(stripslashes($_POST['schooladdress']));
+    $message   .= "\n\nPhone: ";
+    $message   .= strip_tags(stripslashes($_POST['phone']));
+    $message   .= "\n\nMessage: ";
+    $message   .= strip_tags(stripslashes($_POST['message']));
             
     mail($recipient, $subject, $message, implode("\r\n", $headers));
 

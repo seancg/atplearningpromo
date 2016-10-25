@@ -1,0 +1,3 @@
+var phrases = new Array();
+phrases["contact_success"] = "Thank you. Your message has been sent.";
+phrases["request_success"] = "Dear Chef Instructor,<p>Thank you for your interest in American Technical Publishers' new educational products for mastering knife techniques. Shortly, you will be receiving a link to the e-version of the companion textbook, <em>50 Effective Knife Techniques</em>, which follows the DVD presentation, for immediate review.</p><p>As always, please don’t hesitate to contact us if you have further questions or instructional needs.</p><p>Cordially,</p><p>Gayle</p>";

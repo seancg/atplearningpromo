@@ -6,6 +6,10 @@ function closerequest() {
     $('#requestForm').trigger('reveal:close');
 }
 
+function closevideo() {
+    $('#videomodal').trigger('reveal:close');
+}
+
 (function ($, window, undefined) {
     'use strict';
 
@@ -28,9 +32,6 @@ function closerequest() {
         $.fn.foundationClearing ? $doc.foundationClearing() : null;
 
         $.fn.placeholder ? $('input, textarea').placeholder() : null;
-
-        // image gallery
-        // $('.image-gallery a').touchTouch();
 
 
         // scroll-up icon
@@ -60,29 +61,6 @@ function closerequest() {
         });
         // contact form handler
         var form = $("form#contactform");
-        /*form.submit(function (e) {
-            $.post('contact.php', $("form#contactform").serialize(), function (data) {
-                if (data.status == 200) {
-                    $('#formwrapper').hide();
-                    $('#contactmessages').empty().append('<p class="success">' + phrases.contact_success + '</p><a href="javascript:closecontact();" id="contact_close_counter">Close (<span id="counter">5</span>)</a>');
-                    var sec = $('span#counter').text() || 0;
-                    var timer = setInterval(function () {
-                        $('span#counter').text(--sec);
-                        if (sec == 0) {
-                            closecontact();
-                            clearInterval(timer);
-                        }
-                    }, 1000);
-                } else {
-                    $('#contactmessages').empty();
-                    $.each(data.messages, function (i, message) {
-                        $('#contactmessages').append('<p class="fail">' + message + '</p>');
-                    });
-                }
-            }, 'json');
-
-            return false;
-        });*/
         // make contact form available on click
         $('.feedback,#feedback').click(function (e) {
             $('#contact').reveal();
@@ -124,30 +102,6 @@ function closerequest() {
 
         // request form handler
         var form1 = $("form#requestform");
-       /* form.submit(function (e) {
-            console.log("Hi");
-            $.post('request.php', $("form#requestform").serialize(), function (data) {
-                if (data.status == 200) {
-                    $('#requestwrapper').hide();
-                    $('#requestmessages').empty().append('<p class="success">' + phrases.request_success + '</p><a href="javascript:closerequest();" id="request_close_counter">Close (<span id="counter">5</span>)</a>');
-                    var sec = $('span#counter').text() || 0;
-                    var timer = setInterval(function () {
-                        $('span#counter').text(--sec);
-                        if (sec == 0) {
-                            closerequest();
-                            clearInterval(timer);
-                        }
-                    }, 1000);
-                } else {
-                    $('#requestmessages').empty();
-                    $.each(data.messages, function (i, message) {
-                        $('#requestmessages').append('<p class="fail">' + message + '</p>');
-                    });
-                }
-            }, 'json');
-
-            return false;
-        });*/
         // make contact form available on click
         $('.request,#request').click(function (e) {
             $('#requestForm').reveal();
@@ -187,7 +141,14 @@ function closerequest() {
               
           });
 
-
+        // make contact form available on click
+        $('.button_video').on('click', function (e) {
+            var file = $(this).data('src');
+            console.log(file);
+            $('#videomodal').reveal();
+            $('#video').attr('src', file);
+            return false;
+        });
     });
 
     // UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE8 SUPPORT AND ARE USING .block-grids

@@ -594,6 +594,7 @@ h3 {
 
 h3.kt {
     color: #f18b2f;
+    margin: 0px 0 15px 0;
 }
 
 h4 {
@@ -1096,6 +1097,7 @@ img {
 /* 6.5 Video */
 
 .embed_container {
+    background: #000;
     position: relative;
     padding-bottom: 56.25%;
     /* 16/9 ratio */
@@ -1701,6 +1703,7 @@ input#submitrequest:hover {
     /* IE6-8 */
 }
 
+#video_close,
 #contact_close,
 #request_close {
     background: url(../images/controls/close.png) no-repeat;
@@ -1711,6 +1714,7 @@ input#submitrequest:hover {
     margin: -37px -37px 0 0;
 }
 
+#video_close span,
 #contact_close span,
 #request_close span {
     display: none;
@@ -1736,6 +1740,9 @@ input#submitrequest:hover {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     color: #fff;
+}
+.required {
+    color: #C33;
 }
 
 a#contact_close_counter,
@@ -1806,16 +1813,37 @@ a#request_close_counter {
 
 
 /*------------------------------------------------------------------------------------------*/
+#videomodal {
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    max-width: 1024px; 
+    margin: 0 auto;
+    padding: 15px;
+    z-index: 99999;
+
+    border: 5px solid #f1f1f1;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: 0 0 5px #666;
+    -moz-box-shadow: 0 0 5px #666;
+    -webkit-box-shadow: 0 0 5px #666;
+    display: none;
+}
 
 .reveal-modal-bg {
-    position: fixed;
-    height: 100%;
-    width: 100%;
     background: #000;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
     opacity: 0.85;
     filter: alpha(opacity=85);
     z-index: 999;
     display: none;
+    position: fixed;
     top: 0;
     left: 0;
 }
@@ -1827,7 +1855,7 @@ a#request_close_counter {
     top: 100px;
     left: 50%;
     margin-left: -260px;
-    width: 520px;
+    width: 100%;
     position: absolute;
     z-index: 41;
     padding: 30px;
@@ -1840,7 +1868,7 @@ a#request_close_counter {
     font-size: 22px;
     font-size: 2.2rem;
     line-height: .5;
-    position: absolute;
+    position: fixed;
     top: 8px;
     right: 11px;
     color: #aaa;
@@ -2266,7 +2294,7 @@ a#request_close_counter {
     /* Reveal --- */
     /*            */
     .reveal-modal-bg {
-        position: absolute;
+        position: fixed;
     }
     .reveal-modal,
     .reveal-modal.small,

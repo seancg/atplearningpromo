@@ -35,9 +35,11 @@ parse_str($_POST["data"], $_POST);
 
 $name = $_POST['name'];
 $email = $_POST['email'];
+$phone = $_POST['phone'];
+$contact = $_POST['contactprefer'];
 $message = $_POST['message'];
 
-if(!empty($name) && !empty($email) && !empty($message))
+if(!empty($name) && !empty($email) && !empty($phone) && !empty($contact) && !empty($message))
 {
     //echo "Hi";
     //echo json_encode($data);
@@ -49,8 +51,19 @@ if(!empty($name) && !empty($email) && !empty($message))
     $recipient = $settings['request_form_email'];
             
     $subject   = "Message sent through your KT contact form.";
-    $message   = "<p>Someone has requested to be contacted via the <b>ATP Learning Promo - KT (http://www.atplearningpromo.com/culinary/KT/)</b> landing page:</p>";
+    $message   = "Someone has requested to be contacted via the ATP Learning Promo - Knife Techniques (http://www.atplearningpromo.com/culinary/KT/) landing page:</p>";
 
+    $message   .= "\n\nURL_variables: ";
+    $message   .= strip_tags(stripslashes($_POST['qs']));
+    $message   .= "\n\nName: ";
+    $message   .= strip_tags(stripslashes($_POST['name']));
+    $message   .= "\n\nEmail Address: ";
+    $message   .= strip_tags(stripslashes($_POST['email']));
+    $message   .= "\n\nPhone: ";
+    $message   .= strip_tags(stripslashes($_POST['phone']));
+    $message   .= "\n\nPreferred form of contact: ";
+    $message   .= strip_tags(stripslashes($_POST['contactprefer']));
+    $message   .= "\n\nMessage: ";
     $message   .= strip_tags(stripslashes($_POST['message']));
             
     mail($recipient, $subject, $message, implode("\r\n", $headers));
